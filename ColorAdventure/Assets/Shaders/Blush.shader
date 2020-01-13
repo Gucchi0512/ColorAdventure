@@ -6,7 +6,7 @@ Shader "Custom/Blush"
     {
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Blush ("Blush", 2D) = "white" {}
-        _BlushScale ("BlashScale", float) = 0.1
+        _BlushScale ("BlashScale", float) = 0.0
         _BlushColor ("BlushColor", Color) = (1,1,1,1)
         _PaintUV("Hit Uv Pos", Vector) = (0,0,0,0)
     }
