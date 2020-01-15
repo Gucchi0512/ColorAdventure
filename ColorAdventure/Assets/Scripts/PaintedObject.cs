@@ -140,6 +140,10 @@ public class PaintedObject : MonoBehaviour
         return Paint(hitInfo, blush, m_blushColor, m_blushScale);
     }
 
+    public bool Paint(RaycastHit hitInfo, Color blushColor) {
+        return Paint(hitInfo, m_blushTex, blushColor, m_blushScale);
+    }
+
     public bool Paint(RaycastHit hitInfo) {
         return Paint(hitInfo, m_blushTex, m_blushColor, m_blushScale);
     }
