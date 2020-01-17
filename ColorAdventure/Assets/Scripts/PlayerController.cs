@@ -61,12 +61,15 @@ public class PlayerController : MonoBehaviour {
 
     void Shot() {
         var currentInk = GameManager.Instance.Player.CurrentInk;
-        var inkBall = Instantiate(inkBallPrefab);
-        inkBall.GetComponent<InkBall>().InkColor = currentInk.InkColor;
-        currentInk.UseInk();
-        inkBall.transform.position = muzzle.position;
-        inkBall.transform.rotation = Quaternion.LookRotation(camera.transform.forward);
-        var inkRb = inkBall.GetComponent<Rigidbody>();
-        inkRb.AddForce(camera.transform.forward*m_shotPower);
+        if (currentInk.UseInk()) {
+            var inkBall = Instantiate(inkBallPrefab);
+            inkBall.GetComponent<InkBall>().InkColor = currentInk.InkColor;
+            inkBall.transform.position = muzzle.position;
+            inkBall.transform.rotation = Quaternion.LookRotation(camera.transform.forward);
+            var inkRb = inkBall.GetComponent<Rigidbody>();
+            inkRb.AddForce(camera.transform.forward*m_shotPower);
+        }else {
+            GameManager.Instance.UIManager.ShowCaution();   
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -12,13 +13,33 @@ public class UIManager : MonoBehaviour{
 
     [SerializeField] Slider m_inkGaugeSlider;
 
-    public void OnStart(){
+    [SerializeField] private Text m_cautionText;
+    public void OnStart() {
+        var player = GameManager.Instance.Player;
+        //player.Inks.Select(ink => ink.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this));
+        //player.CurrentInk.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this);
+        foreach (var ink in player.Inks) {
+            ink.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this);
+        }
+        InkChanged(player.CurrentInk);
+        UpdateInkGauge(player.CurrentInk.InkAmount.Value);
     }
 
     public void OnUpdate(){
-        var currentInk = GameManager.Instance.Player.CurrentInk;
+        
+    }
+
+    void UpdateInkGauge(float amount) {
+        m_inkGaugeSlider.value = amount/GameManager.Instance.Player.CurrentInk.MAX_INK_AMOUNT;
+    }
+
+    public void InkChanged(Ink currentInk) {
         m_sightImage.color = currentInk.InkColor;
         m_inkAmountImage.color = currentInk.InkColor;
-        m_inkGaugeSlider.value = currentInk.InkAmount.Value/currentInk.MAX_INK_AMOUNT;
+        UpdateInkGauge(currentInk.InkAmount.Value);
+    }
+
+    public void ShowCaution() {
+        m_cautionText.GetComponent<Animation>().Play();
     }
 }

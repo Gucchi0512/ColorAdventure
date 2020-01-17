@@ -30,5 +30,5 @@ Material:
     m_Floats:
     - _BlushScale: 0.03
     m_Colors:
-    - _BlushColor: {r: 0, g: 0, b: 1, a: 1}
-    - _PaintUV: {r: 0.68347573, g: 0.251815, b: 0, a: 0}
+    - _BlushColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - _PaintUV: {r: 0.40010464, g: 0.2370219, b: 0, a: 0}
