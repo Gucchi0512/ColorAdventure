@@ -17,7 +17,7 @@ public class PaintedObject : MonoBehaviour
     [SerializeField, Tooltip("ブラシ用テクスチャ")] private Texture2D m_blushTex = null;
     [SerializeField, Tooltip("ブラシサイズ")] private float m_blushScale = 0.1f;
     [SerializeField, Tooltip("ブラシの色")] private Color m_blushColor = default(Color);
-    
+    [SerializeField, Tooltip("着色可能な色")] private PaintableColor m_paintableColor = default(PaintableColor);
     #endregion
     /// <summary>
     /// Shaderの各プロパティをint型の変数で管理
@@ -25,17 +25,25 @@ public class PaintedObject : MonoBehaviour
     /// </summary>
     #region ShaderPropertyID
     
-    private int mainTexturePropertyID;
-    private int paintUVProptyID;
-    private int blushTexturePropertyID;
-    private int blushScalePropertyID;
-    private int blushColorPropertyID;
+    private int m_mainTexturePropertyID;
+    private int m_paintUVProptyID;
+    private int m_blushTexturePropertyID;
+    private int m_blushScalePropertyID;
+    private int m_blushColorPropertyID;
 
     #endregion
 
-    private RenderTexture paintTexture;
-    private Material material;
-
+    private RenderTexture m_paintTexture;
+    private Material m_material;
+    private Color m_paintableBlushColor;
+    
+    public enum PaintableColor {
+        BLACK,
+        RED,
+        GREEN,
+        BLUE,
+        YELLOW
+    }
     public float BlushScale
     {
         get => Mathf.Clamp01(m_blushScale);
@@ -53,13 +61,13 @@ public class PaintedObject : MonoBehaviour
         get => m_blushTex;
         set => m_blushTex = (Texture2D)value;
     }
-
     private void Awake()
     {
         InitPropertyID();
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-        material = meshRenderer.material;
-        var mainTex = material.GetTexture(mainTexturePropertyID);
+        m_material = meshRenderer.material;
+        m_paintableBlushColor = GameManager.Instance.Player.Inks[(int)m_paintableColor].InkColor;
+        var mainTex = m_material.GetTexture(m_mainTexturePropertyID);
 
         if (mainTex == null)
         {
@@ -70,11 +78,11 @@ public class PaintedObject : MonoBehaviour
         else
         {
             //テクスチャペイント用のRenderTextureを用意
-            paintTexture = new RenderTexture(mainTex.width, mainTex.height, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.Default);
+            m_paintTexture = new RenderTexture(mainTex.width, mainTex.height, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.Default);
             //テクスチャのコピー
-            Graphics.Blit(mainTex, paintTexture);
+            Graphics.Blit(mainTex, m_paintTexture);
             //マテリアルのテクスチャをRenderTextureに変更
-            material.SetTexture(mainTexturePropertyID, paintTexture);
+            m_material.SetTexture(m_mainTexturePropertyID, m_paintTexture);
         }
         
         
@@ -82,20 +90,19 @@ public class PaintedObject : MonoBehaviour
 
     private void InitPropertyID()
     {
-        mainTexturePropertyID = Shader.PropertyToID(m_MainTextureName);
-        paintUVProptyID = Shader.PropertyToID("_PaintUV");
-        blushColorPropertyID = Shader.PropertyToID("_BlushColor");
-        blushScalePropertyID = Shader.PropertyToID("_BlushScale");
-        blushTexturePropertyID = Shader.PropertyToID("_Blush");
+        m_mainTexturePropertyID = Shader.PropertyToID(m_MainTextureName);
+        m_paintUVProptyID = Shader.PropertyToID("_PaintUV");
+        m_blushColorPropertyID = Shader.PropertyToID("_BlushColor");
+        m_blushScalePropertyID = Shader.PropertyToID("_BlushScale");
+        m_blushTexturePropertyID = Shader.PropertyToID("_Blush");
         
     }
 
-    public bool Paint(RaycastHit hitInfo, Texture blush, Color blushColor, float blushScale)
-    {
-        if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject)
+    public bool Paint(RaycastHit hitInfo, Texture blush, Color blushColor, float blushScale) {
+        if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject && blushColor==m_paintableBlushColor)
         {
             var uv = hitInfo.textureCoord;
-            RenderTexture buf = RenderTexture.GetTemporary(paintTexture.width, paintTexture.height);
+            RenderTexture buf = RenderTexture.GetTemporary(m_paintTexture.width, m_paintTexture.height);
 
             #region ErrorCheck
 
@@ -119,12 +126,12 @@ public class PaintedObject : MonoBehaviour
 
             blushScale = Mathf.Clamp01(blushScale);
             
-            m_paintMaterial.SetVector(paintUVProptyID, uv);
-            m_paintMaterial.SetTexture(blushTexturePropertyID, blush);
-            m_paintMaterial.SetFloat(blushScalePropertyID, blushScale);
-            m_paintMaterial.SetVector(blushColorPropertyID, blushColor);
-            Graphics.Blit(paintTexture, buf, m_paintMaterial);
-            Graphics.Blit(buf, paintTexture);
+            m_paintMaterial.SetVector(m_paintUVProptyID, uv);
+            m_paintMaterial.SetTexture(m_blushTexturePropertyID, blush);
+            m_paintMaterial.SetFloat(m_blushScalePropertyID, blushScale);
+            m_paintMaterial.SetVector(m_blushColorPropertyID, blushColor);
+            Graphics.Blit(m_paintTexture, buf, m_paintMaterial);
+            Graphics.Blit(buf, m_paintTexture);
             
             RenderTexture.ReleaseTemporary(buf);
             return true;

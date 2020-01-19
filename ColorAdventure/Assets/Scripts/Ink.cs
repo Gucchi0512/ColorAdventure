@@ -10,12 +10,14 @@ public class Ink{
     public readonly float INK_CONSUMPTION = 2;
 
     private Color m_inkColor;
+
     ReactiveProperty<float> m_inkAmount = new ReactiveProperty<float>(0f);
-
+    
+    
     public Color InkColor => m_inkColor;
-
     public IReadOnlyReactiveProperty<float> InkAmount => m_inkAmount;
 
+    
     /// <summary>
     /// 引数なしなら黒で初期化
     /// </summary>

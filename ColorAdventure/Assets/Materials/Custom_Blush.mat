@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BlushScale: 0.03
+    - _BlushScale: 0.1
     m_Colors:
-    - _BlushColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    - _PaintUV: {r: 0.40010464, g: 0.2370219, b: 0, a: 0}
+    - _BlushColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PaintUV: {r: 0.54183894, g: 0.8885954, b: 0, a: 0}

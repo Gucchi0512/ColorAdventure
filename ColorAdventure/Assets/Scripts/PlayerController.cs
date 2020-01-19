@@ -4,13 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Player))]
 public class PlayerController : MonoBehaviour {
     private Rigidbody m_rb;
     
     private LayerMask m_layerMask;
     
     private bool isGround = true;
-        
+
+    private Player m_player;
+
+    private CameraController m_cameraController;
     [SerializeField] private float m_walkSpeed;
     [SerializeField] private float m_jumpPower;
     [SerializeField] private float m_shotPower;
@@ -24,7 +28,8 @@ public class PlayerController : MonoBehaviour {
     public void OnStart() {
         m_rb = GetComponent<Rigidbody>();
         m_layerMask = LayerMask.GetMask("Player");
-       
+        m_player = GetComponent<Player>();
+        m_cameraController = GetComponentInChildren<CameraController>();
     }
 
     // Update is called once per frame
@@ -45,8 +50,9 @@ public class PlayerController : MonoBehaviour {
             #endregion Move
 
             #region Action
-            if(Input.GetKeyDown(KeyCode.V)) GameManager.Instance.Player.ChangeNextInk();
-            if(Input.GetKeyDown(KeyCode.C)) GameManager.Instance.Player.ChangePrebInk();
+            if(Input.GetKeyDown(KeyCode.V)) m_player.ChangeNextInk();
+            if(Input.GetKeyDown(KeyCode.C)) m_player.ChangePrebInk();
+            if (Input.GetKeyDown(KeyCode.R)) m_cameraController.isReverse = !m_cameraController.isReverse; 
             if (Input.GetMouseButtonDown(0)) Shot();
             #endregion Action
 
@@ -60,7 +66,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Shot() {
-        var currentInk = GameManager.Instance.Player.CurrentInk;
+        var currentInk =m_player.CurrentInk;
         if (currentInk.UseInk()) {
             var inkBall = Instantiate(inkBallPrefab);
             inkBall.GetComponent<InkBall>().InkColor = currentInk.InkColor;
