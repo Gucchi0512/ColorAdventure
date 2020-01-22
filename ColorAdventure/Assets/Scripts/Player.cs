@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour{
-    
+public class Player : MonoBehaviour {
     private PlayerController m_playerController;
     private Ink m_currentInk;
-    private List<Ink> m_inkList = new List<Ink>(){
+    private int m_numOfInks;
+    private List<Ink> m_inkList = new List<Ink>() {
         new Ink(Color.black),
         new Ink(Color.red),
         new Ink(Color.green),
@@ -15,13 +15,17 @@ public class Player : MonoBehaviour{
     };
     private int m_currentInkIndex = 0;
     public Ink CurrentInk => m_currentInk;
+
+    public int NumOfInks => m_numOfInks;
+
     public List<Ink> Inks{
         get{ return m_inkList; }
         set{ m_inkList = value; }
     }
-
+    
     public void OnStart(){
         m_currentInk = m_inkList[m_currentInkIndex];
+        m_numOfInks = m_inkList.Count;
     }
     public void OnUpdate(){
     }

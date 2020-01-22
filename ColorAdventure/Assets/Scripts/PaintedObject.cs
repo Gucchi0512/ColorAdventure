@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 
 [RequireComponent(typeof(Material))]
@@ -17,7 +18,6 @@ public class PaintedObject : MonoBehaviour
     [SerializeField, Tooltip("ブラシ用テクスチャ")] private Texture2D m_blushTex = null;
     [SerializeField, Tooltip("ブラシサイズ")] private float m_blushScale = 0.1f;
     [SerializeField, Tooltip("ブラシの色")] private Color m_blushColor = default(Color);
-    [SerializeField, Tooltip("着色可能な色")] private PaintableColor m_paintableColor = default(PaintableColor);
     #endregion
     /// <summary>
     /// Shaderの各プロパティをint型の変数で管理
@@ -35,15 +35,8 @@ public class PaintedObject : MonoBehaviour
 
     private RenderTexture m_paintTexture;
     private Material m_material;
-    private Color m_paintableBlushColor;
+    [SerializeField]private Color m_paintableBlushColor;
     
-    public enum PaintableColor {
-        BLACK,
-        RED,
-        GREEN,
-        BLUE,
-        YELLOW
-    }
     public float BlushScale
     {
         get => Mathf.Clamp01(m_blushScale);
@@ -61,12 +54,17 @@ public class PaintedObject : MonoBehaviour
         get => m_blushTex;
         set => m_blushTex = (Texture2D)value;
     }
-    private void Awake()
+    public void OnStart()
     {
         InitPropertyID();
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+
+        var player = GameManager.Instance.Player;
+        
         m_material = meshRenderer.material;
-        m_paintableBlushColor = GameManager.Instance.Player.Inks[(int)m_paintableColor].InkColor;
+        int rand = Random.Range(0, player.NumOfInks);
+        Debug.Log(rand);
+        m_paintableBlushColor = player.Inks[rand].InkColor;
         var mainTex = m_material.GetTexture(m_mainTexturePropertyID);
 
         if (mainTex == null)
