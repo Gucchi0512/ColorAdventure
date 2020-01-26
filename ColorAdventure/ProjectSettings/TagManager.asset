@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Stage
+  - Goal
+  - Start
   layers:
   - Default
   - TransparentFX

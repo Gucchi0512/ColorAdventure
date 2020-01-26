@@ -38,8 +38,10 @@ public class Ink{
         }
     }
     public bool ChargeInk(float chargeAmount){
-        if(m_inkAmount.Value<=MAX_INK_AMOUNT){
-            m_inkAmount.Value += chargeAmount;
+        if(m_inkAmount.Value<=MAX_INK_AMOUNT)
+        {
+            var chargedAmount = m_inkAmount.Value + chargeAmount;
+            m_inkAmount.Value = (chargeAmount>MAX_INK_AMOUNT)? MAX_INK_AMOUNT : chargedAmount;
             return true;
         }else{
             return false;

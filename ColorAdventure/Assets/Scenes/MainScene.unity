@@ -135,7 +135,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -220,6 +220,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 13365135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &36720760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36720761}
+  m_Layer: 0
+  m_Name: Start
+  m_TagString: Start
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36720761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36720760}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -48.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 277756033}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &48838608
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.33000565, y: -3.68}
+  m_AnchoredPosition: {x: -0.33000183, y: -3.6799927}
   m_SizeDelta: {x: 52.3, y: -66.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &48838610
@@ -315,10 +345,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &62144472
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -353,10 +383,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &117701856
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -391,10 +421,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &145013438
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -424,7 +454,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -514,10 +544,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &188384233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -546,8 +576,8 @@ GameObject:
   - component: {fileID: 204351510}
   - component: {fileID: 204351513}
   m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
+  m_Name: Floor
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -640,10 +670,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.03
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.05
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &207965578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
@@ -664,10 +694,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &207965580
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -697,7 +727,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
@@ -802,10 +832,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &237584266
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -820,6 +850,176 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: d7aa8cabd26ada44ab6f4b12a8657ebb, type: 3}
+--- !u!1001 &239367633
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -442.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &239367634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 239367633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &240585849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -454.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &240585850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 240585849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &258560899 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
@@ -840,10 +1040,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &258560901
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -873,7 +1073,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -963,10 +1163,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &260331594
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1001,10 +1201,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &262324850
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1049,6 +1249,10 @@ Transform:
   m_Children:
   - {fileID: 204351509}
   - {fileID: 1309079820}
+  - {fileID: 36720761}
+  - {fileID: 1696627091}
+  - {fileID: 1077706086}
+  - {fileID: 310649960}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1064,6 +1268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bcf9702d1db17448d1acf4525cceee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_start: {fileID: 36720760}
+  m_goal: {fileID: 1696627095}
+  m_feltArea: {fileID: 1077706084}
 --- !u!1 &280625888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &285766505
 PrefabInstance:
@@ -1170,7 +1377,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -1270,10 +1477,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &285766509
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1303,7 +1510,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -1403,7 +1610,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -1483,118 +1690,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 308866543}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &342264432
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_Name
-      value: WallCube
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.571306
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 16.079811
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1504981713932161579, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d7aa8cabd26ada44ab6f4b12a8657ebb, type: 3}
---- !u!1 &342264433 stripped
+--- !u!1 &310649959
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
-    type: 3}
-  m_PrefabInstance: {fileID: 342264432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &342264434
-MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342264433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7eb52da5ec92e5438c2686d6fb282d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MainTextureName: _MainTex
-  m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.1
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!64 &342264435
-MeshCollider:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310649960}
+  m_Layer: 0
+  m_Name: InkTanks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &310649960
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342264433}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -5495902117074765545, guid: d7aa8cabd26ada44ab6f4b12a8657ebb, type: 3}
+  m_GameObject: {fileID: 310649959}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 450, y: 211.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3771924097032122423}
+  - {fileID: 1167477284}
+  - {fileID: 856070286}
+  - {fileID: 644773312}
+  - {fileID: 775461221}
+  - {fileID: 759872126}
+  - {fileID: 239367634}
+  - {fileID: 1964147159}
+  - {fileID: 443464081}
+  - {fileID: 240585850}
+  m_Father: {fileID: 277756033}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &356044770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1610,7 +1745,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -1710,10 +1845,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &356044774
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1748,10 +1883,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &388139854
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1781,7 +1916,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -1876,7 +2011,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -1981,10 +2116,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &405632968
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2019,10 +2154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &422769487
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2037,6 +2172,91 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: 166fd368416fcf647ad228e310d1fd4d, type: 3}
+--- !u!1001 &443464080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &443464081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 443464080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &453351600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,7 +2291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000019073486, y: 0}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0}
   m_SizeDelta: {x: -0.000038147, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453351602
@@ -2132,10 +2352,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &457227090
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2165,7 +2385,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -2260,7 +2480,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -2360,10 +2580,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &494880361
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2398,10 +2618,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &497401373
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2431,7 +2651,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -2536,10 +2756,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &507260457
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2569,7 +2789,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -2669,7 +2889,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
@@ -2774,10 +2994,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &518671702
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2812,10 +3032,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &520404569
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2845,7 +3065,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -2935,10 +3155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &568055543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2968,7 +3188,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -3086,9 +3306,94 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.049999237, y: -2.8700027}
+  m_AnchoredPosition: {x: -0.05000305, y: -2.869995}
   m_SizeDelta: {x: -2.88, y: -11}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &644773311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -410.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &644773312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 644773311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &699746320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3104,7 +3409,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -3194,10 +3499,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &699746324
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3232,10 +3537,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &711170837
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3265,7 +3570,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -3365,7 +3670,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -3460,7 +3765,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -3560,10 +3865,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &751142529
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3593,7 +3898,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
@@ -3698,10 +4003,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &751690279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3716,6 +4021,176 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: d7aa8cabd26ada44ab6f4b12a8657ebb, type: 3}
+--- !u!1001 &759872125
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -410.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &759872126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 759872125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &775461220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -462
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &775461221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 775461220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &777886202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3731,7 +4206,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -3866,10 +4341,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &814863471
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3935,7 +4410,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3996,7 +4471,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
@@ -4096,7 +4571,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -4186,10 +4661,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &844082202
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4219,7 +4694,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -4299,6 +4774,91 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 853721793}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &856070285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -486.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &856070286 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 856070285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &859655975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4314,7 +4874,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -4404,10 +4964,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &859655979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4437,7 +4997,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -4542,10 +5102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &911566419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4596,8 +5156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 412.2, y: -136.6}
-  m_SizeDelta: {x: 70.86, y: 140.07}
+  m_AnchoredPosition: {x: 440, y: -287}
+  m_SizeDelta: {x: 70.859985, y: 140.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936916580
 MonoBehaviour:
@@ -4671,10 +5231,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &942271574
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4704,7 +5264,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -4809,10 +5369,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &949965566
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4842,7 +5402,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -4942,7 +5502,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -5047,10 +5607,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &957433838
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5080,7 +5640,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -5180,10 +5740,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &972583668
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5218,10 +5778,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1025416869
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5256,10 +5816,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1031846975
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5289,7 +5849,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -5384,7 +5944,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -5484,10 +6044,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1059072581
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5568,6 +6128,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1077706083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077706086}
+  - component: {fileID: 1077706085}
+  - component: {fileID: 1077706084}
+  m_Layer: 0
+  m_Name: FeltArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1077706084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077706083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b715765086f5948815153362a69c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1077706085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077706083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 200, y: 1, z: 200}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1077706086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077706083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -18.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 277756033}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1102551013 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
@@ -5588,10 +6205,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1102551015
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5626,10 +6243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1122562763
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5659,7 +6276,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -5744,6 +6361,91 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1159090525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1167477283
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -482.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -43.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &1167477284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167477283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1182855742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
@@ -5764,10 +6466,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1182855744
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5802,10 +6504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1206791247
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5853,6 +6555,7 @@ MonoBehaviour:
   m_playerController: {fileID: 1644547494}
   m_UIManager: {fileID: 1391889844}
   m_stage: {fileID: 277756034}
+  m_sceneChanger: {fileID: 2014208550}
 --- !u!4 &1270599227
 Transform:
   m_ObjectHideFlags: 0
@@ -5882,7 +6585,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -5972,10 +6675,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1300179408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6104,7 +6807,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -6209,10 +6912,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1332373408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6242,7 +6945,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
         type: 3}
@@ -6347,10 +7050,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1339402016
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6380,7 +7083,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -6603,10 +7306,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1413429706
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6641,10 +7344,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1434552312
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6674,7 +7377,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -6764,10 +7467,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1446689163
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6809,15 +7512,15 @@ RectTransform:
   m_GameObject: {fileID: 1448690584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1391889843}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 6, y: -5.2}
+  m_SizeDelta: {x: 124.1, y: 120.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448690586
 MonoBehaviour:
@@ -6872,7 +7575,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -6972,10 +7675,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1449768456
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7010,10 +7713,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1482227419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7064,7 +7767,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 309.9, y: 141.6}
+  m_SizeDelta: {x: 309.90002, y: 141.59998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1487300306
 Animation:
@@ -7144,10 +7847,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1499920159
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7177,7 +7880,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -7282,10 +7985,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1570882155
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7334,7 +8037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.000022888184, y: 0.0000076293945}
+  m_AnchoredPosition: {x: -0.000030517578, y: 0}
   m_SizeDelta: {x: 0.000045776, y: -0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595307166
@@ -7395,10 +8098,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1611507898
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7428,7 +8131,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -7523,7 +8226,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -7623,7 +8326,7 @@ GameObject:
   - component: {fileID: 1644547494}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7720,7 +8423,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -7825,10 +8528,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1653553623
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7858,7 +8561,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -7958,7 +8661,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -8063,10 +8766,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1659538433
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8096,7 +8799,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -8181,6 +8884,151 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1686071220}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1696627090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 277756033}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_Name
+      value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -47.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7aa8cabd26ada44ab6f4b12a8657ebb, type: 3}
+--- !u!4 &1696627091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696627090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1696627092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: d7aa8cabd26ada44ab6f4b12a8657ebb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696627090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1696627093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696627092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7eb52da5ec92e5438c2686d6fb282d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MainTextureName: _MainTex
+  m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!64 &1696627094
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696627092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -5495902117074765545, guid: d7aa8cabd26ada44ab6f4b12a8657ebb, type: 3}
+--- !u!114 &1696627095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696627092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07dd2b84c0945342b4a8c131a050407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1706106695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8196,7 +9044,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -8301,10 +9149,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1706106699
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8334,7 +9182,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -8429,7 +9277,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -8529,10 +9377,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1770838391
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8562,7 +9410,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -8667,10 +9515,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1790569170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8700,7 +9548,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -8790,10 +9638,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1793375463
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8823,7 +9671,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -8923,7 +9771,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -9028,10 +9876,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1841625662
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9061,7 +9909,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -9166,10 +10014,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1842027597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9199,7 +10047,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -9304,10 +10152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1852660327
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9342,10 +10190,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1902466296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9380,10 +10228,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1937750309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9413,7 +10261,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -9503,10 +10351,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1941284919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9536,7 +10384,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -9630,10 +10478,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1941785407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9669,7 +10517,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 91f8c6e07149caf4fa081cde46f88dd2,
         type: 3}
@@ -9774,10 +10622,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1946580206
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9812,10 +10660,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &1960808469
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9830,6 +10678,91 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: 166fd368416fcf647ad228e310d1fd4d, type: 3}
+--- !u!1001 &1964147158
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -469.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 39.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &1964147159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 1964147158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2000609488 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
@@ -9850,10 +10783,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &2000609490
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9868,6 +10801,49 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -5495902117074765545, guid: 166fd368416fcf647ad228e310d1fd4d, type: 3}
+--- !u!1 &2014208549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2014208551}
+  - component: {fileID: 2014208550}
+  m_Layer: 0
+  m_Name: SceneChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2014208550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014208549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ea0de546e63694da615f3c7dc38d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2014208551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014208549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 450, y: 211.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2015493603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9883,7 +10859,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -9983,7 +10959,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -10083,7 +11059,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -10178,7 +11154,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -10278,7 +11254,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -10378,10 +11354,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &2109861417
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10411,7 +11387,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -10506,7 +11482,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -10601,7 +11577,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 08589b3e12f1d1b43abd64f61c25b6f8,
         type: 3}
@@ -10701,10 +11677,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MainTextureName: _MainTex
   m_paintMaterial: {fileID: 2100000, guid: 9a32a5c57a1475446a453f00053623d3, type: 2}
-  m_blushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
-  m_blushScale: 0.05
-  m_blushColor: {r: 0, g: 0, b: 0, a: 0}
-  m_paintableBlushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_brushTex: {fileID: 2800000, guid: a2226c66684569c42a48ebe35a578cc1, type: 3}
+  m_brushScale: 0.1
+  m_brushColor: {r: 0, g: 0, b: 0, a: 0}
+  m_paintablebrushColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!64 &2125126075
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10734,7 +11710,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
       propertyPath: m_TagString
-      value: Wall
+      value: Stage
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
         type: 3}
@@ -10813,4 +11789,89 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 166fd368416fcf647ad228e310d1fd4d,
     type: 3}
   m_PrefabInstance: {fileID: 2142268136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3771924097032122422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 310649960}
+    m_Modifications:
+    - target: {fileID: 641465059225632589, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_Name
+      value: InkTanks
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -458.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -211.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -39.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487892484095993706, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_chargeInkAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860264494486464455, guid: 42065a6653131c84e8e79d40f8399117,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42065a6653131c84e8e79d40f8399117, type: 3}
+--- !u!4 &3771924097032122423 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5755664284687693097, guid: 42065a6653131c84e8e79d40f8399117,
+    type: 3}
+  m_PrefabInstance: {fileID: 3771924097032122422}
   m_PrefabAsset: {fileID: 0}

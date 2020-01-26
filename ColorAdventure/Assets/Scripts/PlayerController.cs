@@ -52,8 +52,12 @@ public class PlayerController : MonoBehaviour {
             #region Action
             if(Input.GetKeyDown(KeyCode.V)) m_player.ChangeNextInk();
             if(Input.GetKeyDown(KeyCode.C)) m_player.ChangePrebInk();
-            if (Input.GetKeyDown(KeyCode.R)) m_cameraController.isReverse = !m_cameraController.isReverse; 
-            if (Input.GetMouseButtonDown(0)) Shot();
+            if(Input.GetKeyDown(KeyCode.R)) m_cameraController.isReverse = !m_cameraController.isReverse;
+            if(Input.GetKeyDown(KeyCode.Escape)) GameManager.Instance.SwitchCursorMode();
+            if (Input.GetMouseButtonDown(0)) {
+                if (Cursor.visible) GameManager.Instance.SwitchCursorMode();
+                else Shot();
+            }
             #endregion Action
 
         }

@@ -15,10 +15,12 @@ public class CameraController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        m_isReverseNum = isReverse ? -1 : 1;
-        float xRot = Input.GetAxis("Mouse X");
-        float yRot = Input.GetAxis("Mouse Y");
-        m_playerTransform.Rotate(0, m_isReverseNum*xRot,0);
-        this.transform.Rotate(-(m_isReverseNum)*yRot, 0, 0);
+        if (Cursor.lockState == CursorLockMode.Locked) {
+            m_isReverseNum = isReverse ? -1 : 1;
+            float xRot = Input.GetAxis("Mouse X");
+            float yRot = Input.GetAxis("Mouse Y");
+            m_playerTransform.Rotate(0, m_isReverseNum*xRot,0);
+            this.transform.Rotate(-(m_isReverseNum)*yRot, 0, 0);
+        }
     }
 }

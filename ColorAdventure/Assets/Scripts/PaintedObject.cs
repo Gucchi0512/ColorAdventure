@@ -9,15 +9,14 @@ using Random = UnityEngine.Random;
 [RequireComponent(typeof(Material))]
 [RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(MeshCollider))]
-public class PaintedObject : MonoBehaviour
-{
+public class PaintedObject : MonoBehaviour {
     #region SerializedProperties
     
     [SerializeField, Tooltip("メインテクスチャ")] private string m_MainTextureName = "_MainTex";
     [SerializeField, Tooltip("テクスチャペイント用マテリアル")] private Material m_paintMaterial = null;
-    [SerializeField, Tooltip("ブラシ用テクスチャ")] private Texture2D m_blushTex = null;
-    [SerializeField, Tooltip("ブラシサイズ")] private float m_blushScale = 0.1f;
-    [SerializeField, Tooltip("ブラシの色")] private Color m_blushColor = default(Color);
+    [SerializeField, Tooltip("ブラシ用テクスチャ")] private Texture2D m_brushTex = null;
+    [SerializeField, Tooltip("ブラシサイズ")] private float m_brushScale = 0.1f;
+    [SerializeField, Tooltip("ブラシの色")] private Color m_brushColor = default(Color);
     #endregion
     /// <summary>
     /// Shaderの各プロパティをint型の変数で管理
@@ -27,35 +26,31 @@ public class PaintedObject : MonoBehaviour
     
     private int m_mainTexturePropertyID;
     private int m_paintUVProptyID;
-    private int m_blushTexturePropertyID;
-    private int m_blushScalePropertyID;
-    private int m_blushColorPropertyID;
+    private int m_brushTexturePropertyID;
+    private int m_brushScalePropertyID;
+    private int m_brushColorPropertyID;
 
     #endregion
 
     private RenderTexture m_paintTexture;
     private Material m_material;
-    [SerializeField]private Color m_paintableBlushColor;
+    [SerializeField]private Color m_paintablebrushColor;
     
-    public float BlushScale
-    {
-        get => Mathf.Clamp01(m_blushScale);
-        set => m_blushScale = Mathf.Clamp01(value);
+    public float brushScale {
+        get => Mathf.Clamp01(m_brushScale);
+        set => m_brushScale = Mathf.Clamp01(value);
     }
 
-    public Color BlushColor
-    {
-        get => m_blushColor;
-        set => m_blushColor = value;
+    public Color brushColor {
+        get => m_brushColor;
+        set => m_brushColor = value;
     }
 
-    public Texture2D BlushTex
-    {
-        get => m_blushTex;
-        set => m_blushTex = (Texture2D)value;
+    public Texture2D brushTex {
+        get => m_brushTex;
+        set => m_brushTex = (Texture2D)value;
     }
-    public void OnStart()
-    {
+    public void OnStart() {
         InitPropertyID();
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
 
@@ -63,8 +58,7 @@ public class PaintedObject : MonoBehaviour
         
         m_material = meshRenderer.material;
         int rand = Random.Range(0, player.NumOfInks);
-        Debug.Log(rand);
-        m_paintableBlushColor = player.Inks[rand].InkColor;
+        m_paintablebrushColor = player.Inks[rand].InkColor;
         var mainTex = m_material.GetTexture(m_mainTexturePropertyID);
 
         if (mainTex == null)
@@ -86,19 +80,18 @@ public class PaintedObject : MonoBehaviour
         
     }
 
-    private void InitPropertyID()
-    {
+    private void InitPropertyID() {
         m_mainTexturePropertyID = Shader.PropertyToID(m_MainTextureName);
         m_paintUVProptyID = Shader.PropertyToID("_PaintUV");
-        m_blushColorPropertyID = Shader.PropertyToID("_BlushColor");
-        m_blushScalePropertyID = Shader.PropertyToID("_BlushScale");
-        m_blushTexturePropertyID = Shader.PropertyToID("_Blush");
+        m_brushColorPropertyID = Shader.PropertyToID("_BrushColor");
+        m_brushScalePropertyID = Shader.PropertyToID("_BrushScale");
+        m_brushTexturePropertyID = Shader.PropertyToID("_Brush");
         
     }
 
-    public bool Paint(RaycastHit hitInfo, Texture blush, Color blushColor, float blushScale) {
-        if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject && blushColor==m_paintableBlushColor)
-        {
+    public bool Paint(RaycastHit hitInfo, Texture brush, Color brushColor, float brushScale) {
+        if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject && brushColor==m_paintablebrushColor) {
+            Debug.Log("call");
             var uv = hitInfo.textureCoord;
             RenderTexture buf = RenderTexture.GetTemporary(m_paintTexture.width, m_paintTexture.height);
 
@@ -110,7 +103,7 @@ public class PaintedObject : MonoBehaviour
                 return false;
             }
 
-            if (blush == null)
+            if (brush == null)
             {
                 Debug.LogError("ブラシが設定されていません");
                 return false;
@@ -122,12 +115,12 @@ public class PaintedObject : MonoBehaviour
             }
             #endregion
 
-            blushScale = Mathf.Clamp01(blushScale);
+            brushScale = Mathf.Clamp01(brushScale);
             
             m_paintMaterial.SetVector(m_paintUVProptyID, uv);
-            m_paintMaterial.SetTexture(m_blushTexturePropertyID, blush);
-            m_paintMaterial.SetFloat(m_blushScalePropertyID, blushScale);
-            m_paintMaterial.SetVector(m_blushColorPropertyID, blushColor);
+            m_paintMaterial.SetTexture(m_brushTexturePropertyID, brush);
+            m_paintMaterial.SetFloat(m_brushScalePropertyID, brushScale);
+            m_paintMaterial.SetVector(m_brushColorPropertyID, brushColor);
             Graphics.Blit(m_paintTexture, buf, m_paintMaterial);
             Graphics.Blit(buf, m_paintTexture);
             
@@ -137,19 +130,19 @@ public class PaintedObject : MonoBehaviour
         return false;
     }
 
-    public bool Paint(RaycastHit hitInfo, Texture blush, Color blushColor) {
-        return Paint(hitInfo, blush, blushColor, m_blushScale);
+    public bool Paint(RaycastHit hitInfo, Texture brush, Color brushColor) {
+        return Paint(hitInfo, brush, brushColor, m_brushScale);
     }
 
-    public bool Paint(RaycastHit hitInfo, Texture blush) {
-        return Paint(hitInfo, blush, m_blushColor, m_blushScale);
+    public bool Paint(RaycastHit hitInfo, Texture brush) {
+        return Paint(hitInfo, brush, m_brushColor, m_brushScale);
     }
 
-    public bool Paint(RaycastHit hitInfo, Color blushColor) {
-        return Paint(hitInfo, m_blushTex, blushColor, m_blushScale);
+    public bool Paint(RaycastHit hitInfo, Color brushColor) {
+        return Paint(hitInfo, m_brushTex, brushColor, m_brushScale);
     }
 
     public bool Paint(RaycastHit hitInfo) {
-        return Paint(hitInfo, m_blushTex, m_blushColor, m_blushScale);
+        return Paint(hitInfo, m_brushTex, m_brushColor, m_brushScale);
     }
 }

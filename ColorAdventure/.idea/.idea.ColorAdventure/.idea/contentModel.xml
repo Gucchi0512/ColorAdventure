@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\gucch\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\gucch\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ColorAdventure.-1265010504.00" t="ExcludeRecursive" />
-    <e p="E:\UnityProject\ColorAdventure\ColorAdventure" t="IncludeRecursive">
+    <e p="C:\Users\gucch\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\gucch\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ColorAdventure.-264095681.00" t="ExcludeRecursive" />
+    <e p="C:\Users\gucch\home\VR\ColorAdventure\ColorAdventure" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Plugins" t="Include">
@@ -286,24 +286,37 @@
             </e>
           </e>
         </e>
+        <e p="Props" t="Include">
+          <e p="Barrels" t="Include">
+            <e p="PlasticBarrels" t="Include">
+              <e p="Scene" t="Include">
+                <e p="MouseOrbit_PlasticBarrels.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="FeltArea.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
           <e p="Ink.cs" t="Include" />
           <e p="InkBall.cs" t="Include" />
+          <e p="InkTanks.cs" t="Include" />
           <e p="MousePainter.cs" t="Include" />
           <e p="PaintedObject.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="SceneChanger.cs" t="Include" />
           <e p="SingletonMonoBehaviour.cs" t="Include" />
+          <e p="Stage.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
+          <e p="ViewInitialize.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
-          <e p="Blush.shader" t="Include" />
+          <e p="Brush.shader" t="Include" />
           <e p="InkShader.shader" t="Include" />
         </e>
-        <e p="Stage.cs" t="Include" />
       </e>
       <e p="ColorAdventure.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
