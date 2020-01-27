@@ -16,8 +16,6 @@ public class UIManager : MonoBehaviour{
     [SerializeField] private Text m_cautionText;
     public void OnStart() {
         var player = GameManager.Instance.Player;
-        //player.Inks.Select(ink => ink.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this));
-        //player.CurrentInk.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this);
         foreach (var ink in player.Inks) {
             ink.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this);
         }

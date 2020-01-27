@@ -26,7 +26,7 @@ public class InkBall : MonoBehaviour {
         var ray = new Ray(m_playerCamTransform.position, Vector3.Normalize(dir));
         
         var rot = Quaternion.FromToRotation(Vector3.up, contactPoint.normal);
-        var eff = Instantiate(m_hitEffect, contactPoint.point, rot).GetComponent<ParticleSystem>();
+        var eff = Instantiate(m_hitEffect, this.gameObject.transform.position, rot).GetComponent<ParticleSystem>();
         ParticleSystem.MainModule main = eff.main;
         main.startColor = m_ballInkColor;
         eff.Play();

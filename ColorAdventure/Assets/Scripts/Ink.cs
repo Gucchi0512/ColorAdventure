@@ -41,7 +41,7 @@ public class Ink{
         if(m_inkAmount.Value<=MAX_INK_AMOUNT)
         {
             var chargedAmount = m_inkAmount.Value + chargeAmount;
-            m_inkAmount.Value = (chargeAmount>MAX_INK_AMOUNT)? MAX_INK_AMOUNT : chargedAmount;
+            m_inkAmount.Value = (chargedAmount>MAX_INK_AMOUNT)? MAX_INK_AMOUNT : chargedAmount;
             return true;
         }else{
             return false;

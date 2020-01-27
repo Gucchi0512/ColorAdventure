@@ -14,6 +14,8 @@ ScriptsOnlyBuild:
     - Stage
     - UIManager
     - ViewInitialize
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -55,8 +57,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9710}
     - Class: 114
-      Script: {instanceID: 9910}
-    - Class: 114
       Script: {instanceID: 9960}
     - Class: 114
       Script: {instanceID: 10412}
@@ -69,8 +69,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11852}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -201,8 +199,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9710}
     - Class: 114
-      Script: {instanceID: 9910}
-    - Class: 114
       Script: {instanceID: 9960}
     - Class: 114
       Script: {instanceID: 10412}
@@ -217,8 +213,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11852}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
