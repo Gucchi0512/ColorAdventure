@@ -5,6 +5,10 @@ using UnityEngine;
 public class Goal : MonoBehaviour {
     private bool m_isPainted = false;
 
+    private void Start() {
+        GetComponent<PaintedObject>().OnStart();
+    }
+
     public bool IsPainted{
         get { return m_isPainted; }
         set { m_isPainted = value; }
