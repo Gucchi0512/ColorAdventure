@@ -14,8 +14,6 @@ ScriptsOnlyBuild:
     - Stage
     - UIManager
     - ViewInitialize
-    Unity.Rider.Editor.dll:
-    - Packages.Rider.Editor.RiderScriptEditorData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -1018,4 +1016,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TitleScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/EndScene.unity
-  playerPath: C:/Users/gucch/home/VR/ColorAdventure/ColorAdventure.exe
+  playerPath: E:/UnityProject/ColorAdventure/ColorAdventure.exe
