@@ -17,7 +17,9 @@ public class UIManager : MonoBehaviour{
     public void OnStart() {
         var player = GameManager.Instance.Player;
         foreach (var ink in player.Inks) {
-            ink.InkAmount.Subscribe(x => UpdateInkGauge(x)).AddTo(this);
+            ink.InkAmount.Subscribe(x => {
+                if (ink == player.CurrentInk) UpdateInkGauge(x);
+            }).AddTo(this);
         }
         InkChanged(player.CurrentInk);
         UpdateInkGauge(player.CurrentInk.InkAmount.Value);
