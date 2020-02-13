@@ -91,7 +91,6 @@ public class PaintedObject : MonoBehaviour {
 
     public bool Paint(RaycastHit hitInfo, Texture brush, Color brushColor, float brushScale) {
         if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject && brushColor==m_paintablebrushColor) {
-            Debug.Log("call");
             var uv = hitInfo.textureCoord;
             RenderTexture buf = RenderTexture.GetTemporary(m_paintTexture.width, m_paintTexture.height);
 
